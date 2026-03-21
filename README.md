@@ -1,2 +1,3 @@
 # supriyo86.github.io
-My portfolio website
+
+A polished GitHub Pages portfolio template for showcasing IT support, homelab, and troubleshooting projects.
