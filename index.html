@@ -4,72 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supriyo Talukder | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
+  <header class="navbar">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+
+    <nav class="nav-links">
+      <a href="#expertise">Expertise</a>
+      <a href="#history">History</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-content">
+      <div class="profile-image-wrap">
+        <img src="profile.jpg" alt="Profile photo" class="profile-image" />
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/supriyo86" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+
       <h1>Supriyo Talukder</h1>
-      <p>Aspiring IT Support and System Administration Professional</p>
-    </header>
+      <p>Aspiring IT Support & System Administration Professional</p>
+    </div>
 
-    <section class="section">
-      <h2>About Me</h2>
-      <p>
-        I am building hands-on skills in IT support, Active Directory, Windows Server,
-        VirtualBox, networking, and troubleshooting through home lab practice.
-        I enjoy learning by doing and documenting my projects to strengthen my
-        technical foundation.
-      </p>
-    </section>
+    <div class="wave-background">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff2dfc" />
+            <stop offset="100%" stop-color="#6f2cff" />
+          </linearGradient>
+        </defs>
 
-    <section class="section">
-      <h2>Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Active Directory Home Lab</h3>
-          <p>Built and documented a hands-on Active Directory lab using VirtualBox and Windows Server.</p>
-        </div>
+        <g class="wave-lines">
+          <path d="M-100,650 C150,500 220,780 430,650 S760,520 900,580 S1200,120 1540,160" />
+          <path d="M-100,660 C150,510 220,790 430,660 S760,530 900,590 S1200,130 1540,170" />
+          <path d="M-100,670 C150,520 220,800 430,670 S760,540 900,600 S1200,140 1540,180" />
+          <path d="M-100,680 C150,530 220,810 430,680 S760,550 900,610 S1200,150 1540,190" />
+          <path d="M-100,690 C150,540 220,820 430,690 S760,560 900,620 S1200,160 1540,200" />
+          <path d="M-100,700 C150,550 220,830 430,700 S760,570 900,630 S1200,170 1540,210" />
+          <path d="M-100,710 C150,560 220,840 430,710 S760,580 900,640 S1200,180 1540,220" />
+          <path d="M-100,720 C150,570 220,850 430,720 S760,590 900,650 S1200,190 1540,230" />
+          <path d="M-100,730 C150,580 220,860 430,730 S760,600 900,660 S1200,200 1540,240" />
+          <path d="M-100,740 C150,590 220,870 430,740 S760,610 900,670 S1200,210 1540,250" />
+          <path d="M-100,750 C150,600 220,880 430,750 S760,620 900,680 S1200,220 1540,260" />
+          <path d="M-100,760 C150,610 220,890 430,760 S760,630 900,690 S1200,230 1540,270" />
+          <path d="M-100,770 C150,620 220,900 430,770 S760,640 900,700 S1200,240 1540,280" />
+          <path d="M-100,780 C150,630 220,910 430,780 S760,650 900,710 S1200,250 1540,290" />
+          <path d="M-100,790 C150,640 220,920 430,790 S760,660 900,720 S1200,260 1540,300" />
+          <path d="M-100,800 C150,650 220,930 430,800 S760,670 900,730 S1200,270 1540,310" />
+        </g>
+      </svg>
+    </div>
+  </main>
 
-        <div class="card">
-          <h3>Windows Server 2022 Installation</h3>
-          <p>Installed and configured Windows Server 2022 as part of my home lab environment.</p>
-        </div>
+  <section id="expertise" class="content-section">
+    <h2>Expertise</h2>
+    <p>Active Directory, Windows Server, IT support, DNS, troubleshooting, and virtualization with VirtualBox.</p>
+  </section>
 
-        <div class="card">
-          <h3>Domain Controller Setup</h3>
-          <p>Configured AD DS, DNS, and promoted the server to a Domain Controller for homelab.ca.</p>
-        </div>
+  <section id="history" class="content-section">
+    <h2>History</h2>
+    <p>I am building hands-on skills through home lab projects focused on system administration and real-world IT practice.</p>
+  </section>
 
-        <div class="card">
-          <h3>Client Domain Join</h3>
-          <p>Joined a client machine to the domain and tested authentication and connectivity.</p>
-        </div>
-      </div>
-    </section>
+  <section id="projects" class="content-section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">Active Directory Home Lab</div>
+      <div class="project-card">Windows Server 2022 Installation</div>
+      <div class="project-card">Domain Controller Setup</div>
+      <div class="project-card">Client Domain Join</div>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span>Active Directory</span>
-        <span>Windows Server</span>
-        <span>VirtualBox</span>
-        <span>DNS</span>
-        <span>Troubleshooting</span>
-        <span>IT Support</span>
-        <span>Networking</span>
-      </div>
-    </section>
-
-    <section class="section contact">
-      <h2>Contact</h2>
-      <p>GitHub: <a href="https://github.com/supriyo86" target="_blank">github.com/supriyo86</a></p>
-      <p>LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
-    </section>
-
-    <footer class="footer">
-      <p>© 2026 Supriyo Talukder | Portfolio</p>
-    </footer>
-  </div>
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p><a href="https://github.com/supriyo86" target="_blank">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+  </section>
 </body>
 </html>
