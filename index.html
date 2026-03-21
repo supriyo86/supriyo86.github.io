@@ -1,113 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Supriyo Talukder | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <h1 class="logo">Supriyo Talukder</h1>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
-      </div>
-    </nav>
-
-    <div class="hero-content">
-      <p class="tag">IT Support | Active Directory Lab | Troubleshooting</p>
-      <h2>Building practical IT skills through hands-on projects</h2>
-      <p>
-        I’m focused on IT support, system administration, and home lab projects.
-        I enjoy learning by building, troubleshooting, and documenting real setups.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="about" class="section">
-      <div class="section-header">
-        <h2>About Me</h2>
-        <p>A quick introduction</p>
-      </div>
-      <div class="about-card">
-        <p>
-          I am an aspiring IT professional with hands-on experience building an
-          Active Directory home lab in VirtualBox. My projects focus on Windows
-          Server, domain controller setup, client domain join, user management,
-          DNS configuration, and troubleshooting common IT issues.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p>Click a card to view details</p>
-      </div>
-
-      <div class="project-grid">
-        <a href="https://github.com/supriyo86/active-directory-homelab" target="_blank" class="project-card">
-          <h3>Active Directory Home Lab</h3>
-          <p>
-            Built a complete Active Directory homelab using Windows Server 2022 in
-            VirtualBox, including AD DS, DNS, Domain Controller setup, and
-            domain-joined client authentication testing.
-          </p>
-          <span>View Project (GitHub) →</span>
-        </a>
-
-        <a href="https://github.com/supriyo86" target="_blank" class="project-card">
-          <h3>IT Support Documentation</h3>
-          <p>
-            Created step-by-step troubleshooting notes and setup guides for Windows,
-            VirtualBox, and home lab support tasks to strengthen practical IT support
-            documentation skills.
-          </p>
-          <span>View GitHub Profile →</span>
-        </a>
-
-        <a href="https://github.com/supriyo86" target="_blank" class="project-card">
-          <h3>Networking Practice</h3>
-          <p>
-            Practiced IP configuration, DNS setup, connectivity testing, and virtual
-            network troubleshooting as part of a hands-on lab environment.
-          </p>
-          <span>View GitHub Profile →</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section-header">
-        <h2>Contact</h2>
-        <p>Let’s connect</p>
-      </div>
-
-      <div class="contact-card">
-        <p>
-          I’m open to IT support, help desk, and junior system administration opportunities.
-        </p>
-
-        <div class="contact-links">
-          <a href="mailto:supriyo.talukder86@gmail.com">Email Me</a>
-          <a href="https://www.linkedin.com/in/supriyo-talukder-3291042a6/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/supriyo86" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Supriyo Talukder. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index 8efe9642c15b9d65a80d93ba888ddd26c9d5cf0a..0a8655cc4a303c3a5426c18d04b49503fb72e0ae 100644
+--- a/index.html
++++ b/index.html
+@@ -1,113 +1,206 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-  <title>Supriyo Talukder | Portfolio</title>
+-  <link rel="stylesheet" href="style.css">
++  <title>Supriyo Talukder | IT Portfolio</title>
++  <meta
++    name="description"
++    content="Portfolio website for Supriyo Talukder showcasing IT support, homelab, and systems troubleshooting projects."
++  />
++  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <header class="hero">
+     <nav class="navbar">
+-      <h1 class="logo">Supriyo Talukder</h1>
++      <a href="#top" class="logo">Supriyo<span>.dev</span></a>
+       <div class="nav-links">
+         <a href="#about">About</a>
+         <a href="#projects">Projects</a>
++        <a href="#skills">Skills</a>
+         <a href="#contact">Contact</a>
+-        <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
++        <a href="resume.pdf" class="resume-btn" target="_blank" rel="noreferrer">Resume</a>
+       </div>
+     </nav>
+ 
+-    <div class="hero-content">
+-      <p class="tag">IT Support | Active Directory Lab | Troubleshooting</p>
+-      <h2>Building practical IT skills through hands-on projects</h2>
+-      <p>
+-        I’m focused on IT support, system administration, and home lab projects.
+-        I enjoy learning by building, troubleshooting, and documenting real setups.
+-      </p>
+-      <div class="hero-buttons">
+-        <a href="#projects" class="btn primary">View Projects</a>
+-        <a href="#contact" class="btn secondary">Contact Me</a>
++    <div class="hero-grid" id="top">
++      <div class="hero-copy">
++        <p class="eyebrow">IT Support • Systems • Homelab</p>
++        <h1>GitHub-ready portfolio template for an aspiring IT professional.</h1>
++        <p class="hero-text">
++          I build hands-on lab environments, document troubleshooting workflows, and turn
++          technical practice into clean, recruiter-friendly project stories.
++        </p>
++
++        <div class="hero-buttons">
++          <a href="#projects" class="btn primary">Explore Projects</a>
++          <a href="#contact" class="btn secondary">Let’s Connect</a>
++        </div>
++
++        <ul class="hero-highlights">
++          <li>Active Directory &amp; Windows Server labs</li>
++          <li>Ticket-style troubleshooting documentation</li>
++          <li>Networking, DNS, and endpoint setup practice</li>
++        </ul>
+       </div>
++
++      <aside class="hero-card">
++        <div class="status-pill">Available for entry-level IT opportunities</div>
++        <h2>Quick Snapshot</h2>
++        <div class="stats-grid">
++          <div>
++            <strong>3+</strong>
++            <span>Portfolio projects</span>
++          </div>
++          <div>
++            <strong>1</strong>
++            <span>Active Directory lab</span>
++          </div>
++          <div>
++            <strong>24/7</strong>
++            <span>Curiosity for problem-solving</span>
++          </div>
++          <div>
++            <strong>100%</strong>
++            <span>Hands-on learning mindset</span>
++          </div>
++        </div>
++        <div class="hero-card-footer">
++          <p>Focused on support, system administration, and practical technical growth.</p>
++        </div>
++      </aside>
+     </div>
+   </header>
+ 
+   <main>
+-    <section id="about" class="section">
++    <section id="about" class="section section-split">
+       <div class="section-header">
+-        <h2>About Me</h2>
+-        <p>A quick introduction</p>
++        <p class="section-kicker">About me</p>
++        <h2>Built to present your story like a live portfolio, not just a plain resume.</h2>
+       </div>
+-      <div class="about-card">
+-        <p>
+-          I am an aspiring IT professional with hands-on experience building an
+-          Active Directory home lab in VirtualBox. My projects focus on Windows
+-          Server, domain controller setup, client domain join, user management,
+-          DNS configuration, and troubleshooting common IT issues.
+-        </p>
++
++      <div class="split-grid">
++        <article class="glass-card">
++          <h3>Professional Profile</h3>
++          <p>
++            I am an aspiring IT professional with practical experience building and maintaining
++            a Windows-based home lab. My focus includes Active Directory, domain controller
++            setup, client configuration, DNS services, and documenting support workflows in a
++            clear and repeatable way.
++          </p>
++        </article>
++
++        <article class="glass-card">
++          <h3>What I bring</h3>
++          <ul class="feature-list">
++            <li>Step-by-step troubleshooting with strong documentation habits</li>
++            <li>Hands-on practice with virtualization and Windows administration</li>
++            <li>Clear communication for support tasks and technical explanations</li>
++          </ul>
++        </article>
+       </div>
+     </section>
+ 
+     <section id="projects" class="section">
+       <div class="section-header">
+-        <h2>Projects</h2>
+-        <p>Click a card to view details</p>
++        <p class="section-kicker">Featured work</p>
++        <h2>Projects that show what you can actually build, fix, and explain.</h2>
+       </div>
+ 
+       <div class="project-grid">
+-        <a href="https://github.com/supriyo86/active-directory-homelab" target="_blank" class="project-card">
++        <a href="https://github.com/supriyo86/active-directory-homelab" target="_blank" rel="noreferrer" class="project-card featured">
++          <div class="project-tag">Flagship Project</div>
+           <h3>Active Directory Home Lab</h3>
+           <p>
+-            Built a complete Active Directory homelab using Windows Server 2022 in
+-            VirtualBox, including AD DS, DNS, Domain Controller setup, and
+-            domain-joined client authentication testing.
++            Designed a complete homelab in VirtualBox using Windows Server 2022, including AD DS,
++            DNS, user administration, domain joins, and authentication validation between systems.
+           </p>
+-          <span>View Project (GitHub) →</span>
++          <span>Open on GitHub →</span>
+         </a>
+ 
+-        <a href="https://github.com/supriyo86" target="_blank" class="project-card">
+-          <h3>IT Support Documentation</h3>
++        <a href="https://github.com/supriyo86" target="_blank" rel="noreferrer" class="project-card">
++          <div class="project-tag">Documentation</div>
++          <h3>IT Support Playbooks</h3>
+           <p>
+-            Created step-by-step troubleshooting notes and setup guides for Windows,
+-            VirtualBox, and home lab support tasks to strengthen practical IT support
+-            documentation skills.
++            Organized setup notes, issue resolutions, and repeatable support workflows for common
++            Windows, virtualization, and system troubleshooting tasks.
+           </p>
+-          <span>View GitHub Profile →</span>
++          <span>View profile resources →</span>
+         </a>
+ 
+-        <a href="https://github.com/supriyo86" target="_blank" class="project-card">
+-          <h3>Networking Practice</h3>
++        <a href="https://github.com/supriyo86" target="_blank" rel="noreferrer" class="project-card">
++          <div class="project-tag">Networking</div>
++          <h3>Networking Practice Lab</h3>
+           <p>
+-            Practiced IP configuration, DNS setup, connectivity testing, and virtual
+-            network troubleshooting as part of a hands-on lab environment.
++            Practiced IP assignment, DNS troubleshooting, connectivity validation, and virtual
++            network testing to strengthen foundational infrastructure skills.
+           </p>
+-          <span>View GitHub Profile →</span>
++          <span>See GitHub activity →</span>
+         </a>
+       </div>
+     </section>
+ 
+-    <section id="contact" class="section">
+-      <div class="section-header">
+-        <h2>Contact</h2>
+-        <p>Let’s connect</p>
++    <section id="skills" class="section section-split alt-bg">
++      <div class="section-header narrow">
++        <p class="section-kicker">Core strengths</p>
++        <h2>A simple template section for tools, technologies, and work style.</h2>
+       </div>
+ 
+-      <div class="contact-card">
+-        <p>
+-          I’m open to IT support, help desk, and junior system administration opportunities.
+-        </p>
++      <div class="skills-layout">
++        <div class="skill-panel">
++          <h3>Technical Skills</h3>
++          <div class="pill-group">
++            <span>Windows Server</span>
++            <span>Active Directory</span>
++            <span>DNS</span>
++            <span>VirtualBox</span>
++            <span>Networking Basics</span>
++            <span>Troubleshooting</span>
++            <span>User Management</span>
++            <span>Documentation</span>
++          </div>
++        </div>
++
++        <div class="timeline-card">
++          <h3>Learning Journey</h3>
++          <div class="timeline-item">
++            <strong>Homelab Setup</strong>
++            <p>Built and tested a virtualized Windows server environment from scratch.</p>
++          </div>
++          <div class="timeline-item">
++            <strong>Support Practice</strong>
++            <p>Documented recurring fixes and support scenarios to improve repeatability.</p>
++          </div>
++          <div class="timeline-item">
++            <strong>Portfolio Growth</strong>
++            <p>Turned technical practice into a polished GitHub Pages portfolio presence.</p>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section id="contact" class="section">
++      <div class="contact-banner">
++        <div>
++          <p class="section-kicker">Contact</p>
++          <h2>Ready to customize this template with your own projects and achievements.</h2>
++          <p>
++            You can swap in certifications, add screenshots, link a resume, and tailor these
++            sections for help desk, IT support, sysadmin, or general tech roles.
++          </p>
++        </div>
+ 
+         <div class="contact-links">
+           <a href="mailto:supriyo.talukder86@gmail.com">Email Me</a>
+-          <a href="https://www.linkedin.com/in/supriyo-talukder-3291042a6/" target="_blank">LinkedIn</a>
+-          <a href="https://github.com/supriyo86" target="_blank">GitHub</a>
++          <a href="https://www.linkedin.com/in/supriyo-talukder-3291042a6/" target="_blank" rel="noreferrer">LinkedIn</a>
++          <a href="https://github.com/supriyo86" target="_blank" rel="noreferrer">GitHub</a>
+         </div>
+       </div>
+     </section>
+   </main>
+ 
+   <footer>
+-    <p>© 2026 Supriyo Talukder. All rights reserved.</p>
++    <p>© 2026 Supriyo Talukder. Crafted as a live GitHub portfolio template.</p>
+   </footer>
+ </body>
+ </html>
+ 
+EOF
+)
