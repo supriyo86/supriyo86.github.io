@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supriyo Talukder | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Supriyo Talukder</h1>
-  <p>Aspiring IT Support and System Administration Professional</p>
+  <div class="container">
+    <header class="hero">
+      <h1>Supriyo Talukder</h1>
+      <p>Aspiring IT Support and System Administration Professional</p>
+    </header>
 
-  <h2>About Me</h2>
-  <p>
-    I am building hands-on skills in IT support, Active Directory, Windows Server,
-    VirtualBox, networking, and troubleshooting through home lab practice.
-  </p>
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I am building hands-on skills in IT support, Active Directory, Windows Server,
+        VirtualBox, networking, and troubleshooting through home lab practice.
+        I enjoy learning by doing and documenting my projects to strengthen my
+        technical foundation.
+      </p>
+    </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Active Directory Home Lab</li>
-    <li>Windows Server 2022 Installation</li>
-    <li>Domain Controller Setup</li>
-    <li>Client Domain Join</li>
-  </ul>
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Active Directory Home Lab</h3>
+          <p>Built and documented a hands-on Active Directory lab using VirtualBox and Windows Server.</p>
+        </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Active Directory</li>
-    <li>Windows Server</li>
-    <li>VirtualBox</li>
-    <li>DNS</li>
-    <li>Troubleshooting</li>
-    <li>IT Support</li>
-  </ul>
+        <div class="card">
+          <h3>Windows Server 2022 Installation</h3>
+          <p>Installed and configured Windows Server 2022 as part of my home lab environment.</p>
+        </div>
 
-  <h2>Contact</h2>
-  <p>GitHub: <a href="https://github.com/supriyo86">github.com/supriyo86</a></p>
-  <p>LinkedIn: Add your LinkedIn link here</p>
+        <div class="card">
+          <h3>Domain Controller Setup</h3>
+          <p>Configured AD DS, DNS, and promoted the server to a Domain Controller for homelab.ca.</p>
+        </div>
+
+        <div class="card">
+          <h3>Client Domain Join</h3>
+          <p>Joined a client machine to the domain and tested authentication and connectivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Active Directory</span>
+        <span>Windows Server</span>
+        <span>VirtualBox</span>
+        <span>DNS</span>
+        <span>Troubleshooting</span>
+        <span>IT Support</span>
+        <span>Networking</span>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <h2>Contact</h2>
+      <p>GitHub: <a href="https://github.com/supriyo86" target="_blank">github.com/supriyo86</a></p>
+      <p>LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Supriyo Talukder | Portfolio</p>
+    </footer>
+  </div>
 </body>
 </html>
