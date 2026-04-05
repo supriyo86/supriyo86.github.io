@@ -1,74 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Supriyo Talukder</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supriyo Talukder | Portfolio</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <main class="wrapper">
+    <section class="portfolio-card">
+      <div class="shape shape-top-left"></div>
+      <div class="shape shape-top-mid"></div>
+      <div class="shape shape-top-right"></div>
+      <div class="shape shape-bottom-left"></div>
+      <div class="shape shape-bottom-mid"></div>
+      <div class="shape shape-bottom-right"></div>
 
-<div class="container">
+      <div class="card-content">
+        <aside class="left-panel">
+          <div class="avatar-box">
+            <img src="assets/profile.jpg" alt="Profile portrait" class="avatar" />
+            <div class="small-badge">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+          </div>
 
-  <div class="card">
+          <h1 class="name">Supriyo Talukder</h1>
+          <div class="role">IT Support / IT Operations</div>
+          <div class="company">Vancouver, BC</div>
 
-    <!-- LEFT -->
-    <div class="left">
-      <img src="assets/profile.jpg" class="avatar">
+          <div class="socials">
+            <a href="mailto:supriyo.talukder86@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </aside>
 
-      <h1>Supriyo Talukder</h1>
-      <p>IT Support / IT Operations</p>
-      <p>Vancouver, BC</p>
+        <section class="right-panel">
+          <div class="about-block">
+            <h2>About Me</h2>
+            <p>
+              I am a tech-savvy IT support professional who enjoys helping users
+              troubleshoot technical issues and ensuring minimal downtime. I have
+              experience supporting users with network connectivity, hardware,
+              software, and Microsoft 365 issues, and I am comfortable guiding
+              users step by step while managing multiple requests efficiently.
+            </p>
 
-      <div class="icons">
-        <a href="mailto:supriyo.talukder86@gmail.com"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="cv-btn">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="bottom-grid">
+            <div class="block">
+              <h3>Core Skills</h3>
+              <ul class="interest-list">
+                <li>IT Support & Troubleshooting</li>
+                <li>Networking (TCP/IP, DNS, DHCP)</li>
+                <li>Cybersecurity Fundamentals</li>
+                <li>Windows & Linux (Ubuntu)</li>
+                <li>Microsoft 365 Support</li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h3>Education</h3>
+
+              <div class="edu-item">
+                <div class="edu-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <div class="edu-title">MSc Cybersecurity</div>
+                  <div class="edu-sub">New York Institute of Technology, Vancouver</div>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <div class="edu-title">BSc Computer Science and Engineering</div>
+                  <div class="edu-sub">Leading University, Sylhet, Bangladesh</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-grid" style="margin-top: 8px;">
+            <div class="block">
+              <h3>Experience</h3>
+              <div class="edu-item">
+                <div class="edu-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                  <div class="edu-title">Technical Support Representative</div>
+                  <div class="edu-sub">MRS Network | Aug 2022 – Apr 2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <h3>Tools</h3>
+              <ul class="interest-list">
+                <li>AnyDesk</li>
+                <li>Wireshark</li>
+                <li>tcpdump / Tshark</li>
+                <li>Oracle VirtualBox</li>
+                <li>FreeIPA</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- RIGHT -->
-    <div class="right">
-
-      <h2>About Me</h2>
-      <p>
-        I am a tech-savvy IT support professional who enjoys troubleshooting technical issues
-        and ensuring minimal downtime.
-      </p>
-
-      <a class="btn" href="#">Download Resume</a>
-
-      <div class="grid">
-
-        <div>
-          <h3>Core Skills</h3>
-          <ul>
-            <li>IT Support</li>
-            <li>Networking (TCP/IP, DNS, DHCP)</li>
-            <li>Cybersecurity</li>
-            <li>Windows & Linux</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Education</h3>
-          <p><strong>MSc Cybersecurity</strong><br>NYIT</p>
-          <p><strong>BSc CSE</strong><br>Leading University</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
