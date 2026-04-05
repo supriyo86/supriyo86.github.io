@@ -3,135 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Portfolio Template</title>
+  <meta
+    name="description"
+    content="Modern portfolio template with profile, about, interests, and education sections."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8blCIB6VB7nqQ8P0V+2b1z9+k+30bgw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="portfolio-card">
-    <div class="container">
-      <div class="left-section">
-        <div class="profile-wrapper">
-          <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
-        </div>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Card</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="page-wrap">
-      <section class="portfolio-card" aria-label="Portfolio card">
-        <aside class="left-panel">
-          <div class="avatar-wrap">
-            <img src="profile.jpeg" alt="Profile portrait" class="avatar" />
-            <span class="camera-dot" aria-hidden="true">◉</span>
+  <main class="page">
+    <section class="portfolio-card">
+      <div class="bg-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+        <span class="shape shape-5"></span>
+        <span class="shape shape-6"></span>
+      </div>
+
+      <div class="card-grid">
+        <!-- Left Panel -->
+        <aside class="profile-panel">
+          <div class="avatar-wrapper">
+            <img
+              src="assets/profile.jpg"
+              alt="Profile portrait"
+              class="avatar"
+            />
+            <button class="status-badge" aria-label="Open status">
+              <i class="fa-solid fa-camera"></i>
+            </button>
           </div>
 
-        <h2 class="name">Your Name</h2>
-        <h3 class="name-secondary">Your Name in Native Language</h3>
-        <p class="role">Chief Scientist</p>
-        <p class="company">OpenAI</p>
-          <h1 class="person-name">Chien Shiung Wu</h1>
-          <p class="native-name">吴 健 雄</p>
-          <p class="job-title">Chief Scientist</p>
-          <p class="org">OpenAI</p>
+          <h1 class="profile-name">Chien Shiung Wu</h1>
+          <div class="profile-native">吴 健 雄</div>
+          <p class="profile-role">Chief Scientist</p>
+          <p class="profile-company">OpenAI</p>
 
-        <div class="social-links">
-          <a href="#">X</a>
-          <a href="#">IG</a>
-          <a href="#">GH</a>
-          <a href="#">IN</a>
-          <a href="#">LI</a>
-          <a href="#">ID</a>
-        </div>
-      </div>
-          <div class="social-row" aria-label="Social links">
-            <a href="#" aria-label="Website">@</a>
-            <a href="#" aria-label="X">𝕏</a>
-            <a href="#" aria-label="Instagram">◎</a>
-            <a href="#" aria-label="GitHub">GH</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="ORCID">iD</a>
+          <div class="social-links">
+            <a href="#" aria-label="Email"><i class="fa-regular fa-at"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Google Scholar"><i class="fa-brands fa-google"></i></a>
+            <a href="#" aria-label="Website"><i class="fa-regular fa-id-badge"></i></a>
           </div>
         </aside>
 
-      <div class="right-section">
-        <h1>About Me</h1>
-        <p class="about-text">
-          Write a short introduction here. Talk about who you are, what you do,
-          your background, and your main technical interests. Keep this section
-          professional, simple, and easy to read.
-        </p>
-        <section class="right-panel">
-          <h2>About Me</h2>
-          <p>
-            Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her
-            research interests include distributed robotics, mobile computing and programmable
-            matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring
-            robots, systems of self-organizing robots, and mobile sensor networks.
-          </p>
+        <!-- Right Panel -->
+        <section class="content-panel">
+          <div class="content-block">
+            <h2>About Me</h2>
+            <p>
+              Chien Shiung Wu is a professor of artificial intelligence at the
+              Stanford AI Lab. Her research interests include distributed
+              robotics, mobile computing and programmable matter. She leads the
+              Robotic Neurobiology group, which develops self-reconfiguring
+              robots, systems of self-organizing robots, and mobile sensor
+              networks.
+            </p>
 
-        <button class="cv-btn" id="downloadBtn">Download CV</button>
-          <button id="downloadBtn" class="cv-btn" type="button">⬇ Download CV</button>
-
-        <div class="info-grid">
-          <div class="info-box">
-            <h2>Interests</h2>
-            <ul>
-              <li>Artificial Intelligence</li>
-              <li>Cybersecurity</li>
-              <li>Cloud Computing</li>
-              <li>System Administration</li>
-            </ul>
+            <a href="#" class="cv-button">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </a>
           </div>
-          <div class="split-grid">
-            <article>
+
+          <div class="info-grid">
+            <div class="info-card">
               <h3>Interests</h3>
-              <ul>
+              <ul class="styled-list">
                 <li>Artificial Intelligence</li>
                 <li>Computational Linguistics</li>
                 <li>Information Retrieval</li>
+                <li>Human-Computer Interaction</li>
               </ul>
-            </article>
+            </div>
 
-          <div class="info-box">
-            <h2>Education</h2>
-            <ul>
-              <li>BSc Computer Science</li>
-              <li>MSc Cybersecurity</li>
-              <li>Certifications / Training</li>
-            </ul>
-            <article>
+            <div class="info-card">
               <h3>Education</h3>
-              <ul class="edu-list">
+              <ul class="education-list">
                 <li>
-                  <span>✧</span>
+                  <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
                   <div>
                     <strong>PhD Artificial Intelligence</strong>
-                    <small>Stanford University</small>
+                    <span>Stanford University</span>
                   </div>
                 </li>
                 <li>
-                  <span>✧</span>
+                  <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
                   <div>
                     <strong>MEng Artificial Intelligence</strong>
-                    <small>Massachusetts Institute of Technology</small>
+                    <span>Massachusetts Institute of Technology</span>
                   </div>
                 </li>
               </ul>
-            </article>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
         </section>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
-    <script src="script.js"></script>
-  </body>
 </html>
