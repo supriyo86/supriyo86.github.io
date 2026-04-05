@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
+  font-family: Arial, sans-serif;
   background: #0b1d1a;
   color: #ffffff;
   min-height: 100vh;
@@ -87,7 +87,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 8px 10px;
   border-radius: 50px;
   transition: 0.3s ease;
@@ -113,7 +113,7 @@ body {
 
 .cv-btn {
   background: #2d3653;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 12px 22px;
   border-radius: 10px;
