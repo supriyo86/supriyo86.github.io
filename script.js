@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cvBtn = document.querySelector(".cv-btn");
+  const btn = document.querySelector(".btn");
 
-  if (cvBtn) {
-    cvBtn.addEventListener("click", (e) => {
-      const href = cvBtn.getAttribute("href");
+  if (btn) {
+    btn.addEventListener("click", (event) => {
+      const href = btn.getAttribute("href");
       if (!href || href === "#") {
-        e.preventDefault();
-        alert("Add your resume file path to the Download Resume button.");
+        event.preventDefault();
+        alert("Add your resume file path to the button href.");
       }
     });
   }
