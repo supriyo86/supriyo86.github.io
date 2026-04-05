@@ -1,1 +1,130 @@
 
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.page h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #0f172a;
+  text-align: center;
+}
+
+.page-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+.project-card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.project-card p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.project-card ul {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+
+.project-card ul li {
+  margin-bottom: 10px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #0f172a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.project-btn:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+.project-btn.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.project-btn.secondary:hover {
+  background: #cbd5e1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 20px;
+}
+
+.tech-stack span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 40px 18px;
+  }
+
+  .page h1 {
+    font-size: 30px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
