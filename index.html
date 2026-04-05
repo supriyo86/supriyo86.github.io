@@ -3,122 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Supriyo Talukder | Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-
+  <title>Portfolio Template</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
-  <header class="navbar">
-  <div class="nav-left">Supriyo Talukder</div>
-
-  <nav class="nav-center">
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Experience</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <div class="nav-right">
-    <i class="fa fa-search"></i>
-    <i class="fa fa-moon"></i>
-  </div>
-</header>
 <body>
-  <main class="hero">
-    <div class="bg-shape bg-shape-1"></div>
-    <div class="bg-shape bg-shape-2"></div>
-    <div class="bg-shape bg-shape-3"></div>
+  <header class="navbar">
+    <div class="logo">Your Name</div>
 
-    <section class="card">
-      <div class="card-glow"></div>
+    <nav class="nav-links">
+      <a href="#">Bio</a>
+      <a href="#">Papers</a>
+      <a href="#">Talks</a>
+      <a href="#">News</a>
+      <a href="#">Experience</a>
+      <a href="#">Projects</a>
+      <a href="#">Teaching</a>
+    </nav>
 
-      <aside class="left">
-        <div class="avatar-box">
-          <img src="assets/profile.jpeg" alt="Supriyo Talukder portrait" class="avatar" />
-          <div class="small-badge">
-            <i class="fa-solid fa-camera"></i>
+    <div class="nav-icons">
+      <button class="icon-btn"><i class="fas fa-search"></i></button>
+      <button class="icon-btn" id="themeToggle"><i class="far fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="bg-shapes"></div>
+
+    <div class="container">
+      <aside class="left-panel">
+        <div class="profile-card">
+          <img src="assets/profile.jpeg" alt="Profile" class="profile-img" />
+          <h2>Chien Shiung Wu</h2>
+          <h1>吴 健 雄</h1>
+          <h3>Chief Scientist</h3>
+          <p>OpenAI</p>
+
+          <div class="social-icons">
+            <a href="#"><i class="far fa-circle"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fas fa-id-badge"></i></a>
           </div>
-        </div>
-
-        <h1>Supriyo Talukder</h1>
-        <p class="role">IT Support / IT Operations</p>
-        <p class="location">Vancouver, BC</p>
-
-        <div class="icons">
-          <a href="mailto:supriyo.talukder86@gmail.com" aria-label="Email">
-            <i class="fa-solid fa-at"></i>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
         </div>
       </aside>
 
-      <section class="right">
-        <div class="top-content">
-          <h2>About Me</h2>
-          <p class="about-text">
-            I am a tech-savvy IT support professional who enjoys helping users troubleshoot
-            technical issues and ensuring minimal downtime. I have experience supporting users
-            with network connectivity, hardware, software, and Microsoft 365 issues. I am
-            comfortable guiding users step by step while handling multiple requests efficiently.
-          </p>
+      <section class="right-panel">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab.
+          Her research interests include distributed robotics, mobile computing and programmable
+          matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring
+          robots, systems of self-organizing robots, and mobile sensor networks.
+        </p>
 
-          <a href="#" class="btn">
-            <i class="fa-solid fa-download"></i>
-            <span>Download Resume</span>
-          </a>
-        </div>
+        <button class="cv-btn">
+          <i class="fas fa-download"></i> Download CV
+        </button>
 
-        <div class="grid">
-          <div class="info-block">
-            <h3>Skills</h3>
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>Interests</h3>
             <ul>
-              <li>IT Support & Troubleshooting</li>
-              <li>Networking (TCP/IP, DNS, DHCP)</li>
-              <li>Cybersecurity Fundamentals</li>
-              <li>Linux / Windows</li>
-              <li>Microsoft 365 Support</li>
+              <li>Artificial Intelligence</li>
+              <li>Computational Linguistics</li>
+              <li>Information Retrieval</li>
             </ul>
           </div>
 
-          <div class="info-block">
+          <div class="info-box">
             <h3>Education</h3>
-
-            <div class="item">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <div class="edu-item">
+              <i class="fas fa-graduation-cap"></i>
               <div>
-                <strong>MSc Cybersecurity</strong>
-                <span>NYIT Vancouver</span>
+                <strong>PhD Artificial Intelligence</strong>
+                <p>Stanford University</p>
               </div>
             </div>
 
-            <div class="item">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <div class="edu-item">
+              <i class="fas fa-graduation-cap"></i>
               <div>
-                <strong>BSc CSE</strong>
-                <span>Leading University</span>
+                <strong>MEng Artificial Intelligence</strong>
+                <p>Massachusetts Institute of Technology</p>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>BSc Artificial Intelligence</strong>
+                <p>Massachusetts Institute of Technology</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
