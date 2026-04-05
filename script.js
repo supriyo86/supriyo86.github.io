@@ -1,11 +1,11 @@
-const themeToggle = document.getElementById("themeToggle");
+const toggle = document.getElementById("themeToggle");
 
-themeToggle.addEventListener("click", () => {
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 
   if (document.body.classList.contains("light-mode")) {
-    themeToggle.textContent = "☾";
+    toggle.textContent = "☾";
   } else {
-    themeToggle.textContent = "☀";
+    toggle.textContent = "☀";
   }
 });
