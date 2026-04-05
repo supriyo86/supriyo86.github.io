@@ -2,92 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supriyo Talukder | Portfolio</title>
 
-  <title>Supriyo Talukder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="hero">
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    <div class="bg-shape bg-shape-3"></div>
 
-<!-- 🔥 NAVBAR -->
-<header class="navbar">
-  <div class="nav-left">Supriyo Talukder</div>
+    <section class="card">
+      <div class="card-glow"></div>
 
-  <nav class="nav-center">
-    <a href="#">Bio</a>
-    <a href="#">Experience</a>
-    <a href="#">Projects</a>
-    <a href="#">Skills</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <div class="nav-right">
-    <i class="fa fa-search"></i>
-    <i class="fa fa-moon"></i>
-  </div>
-</header>
-
-<!-- 🔥 MAIN CARD -->
-<section class="hero">
-
-  <div class="card">
-
-    <!-- LEFT -->
-    <div class="left">
-      <img src="assets/profile.jpeg" class="avatar" />
-
-      <h2>Supriyo Talukder</h2>
-      <p>IT Support / IT Operations</p>
-      <span>Vancouver, BC</span>
-
-      <div class="icons">
-        <a href="mailto:supriyo.talukder86@gmail.com"><i class="fa fa-at"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div>
-
-    <!-- RIGHT -->
-    <div class="right">
-      <h1>About Me</h1>
-
-      <p>
-        I am a tech-savvy IT support professional who enjoys helping users troubleshoot
-        technical issues and ensuring minimal downtime. I have experience supporting users
-        with network connectivity, hardware, software, and Microsoft 365 issues.
-      </p>
-
-      <a class="btn" href="#">Download Resume</a>
-
-      <div class="grid">
-        <div>
-          <h3>Skills</h3>
-          <ul>
-            <li>IT Support</li>
-            <li>Networking</li>
-            <li>Cybersecurity</li>
-            <li>Linux / Windows</li>
-          </ul>
+      <aside class="left">
+        <div class="avatar-box">
+          <img src="assets/profile.jpeg" alt="Supriyo Talukder portrait" class="avatar" />
+          <div class="small-badge">
+            <i class="fa-solid fa-camera"></i>
+          </div>
         </div>
 
-        <div>
-          <h3>Education</h3>
-          <p><b>MSc Cybersecurity</b><br>NYIT Vancouver</p>
-          <p><b>BSc CSE</b><br>Leading University</p>
+        <h1>Supriyo Talukder</h1>
+        <p class="role">IT Support / IT Operations</p>
+        <p class="location">Vancouver, BC</p>
+
+        <div class="icons">
+          <a href="mailto:supriyo.talukder86@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-at"></i>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
-      </div>
+      </aside>
 
-    </div>
+      <section class="right">
+        <div class="top-content">
+          <h2>About Me</h2>
+          <p class="about-text">
+            I am a tech-savvy IT support professional who enjoys helping users troubleshoot
+            technical issues and ensuring minimal downtime. I have experience supporting users
+            with network connectivity, hardware, software, and Microsoft 365 issues. I am
+            comfortable guiding users step by step while handling multiple requests efficiently.
+          </p>
 
-  </div>
+          <a href="#" class="btn">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
 
-</section>
+        <div class="grid">
+          <div class="info-block">
+            <h3>Skills</h3>
+            <ul>
+              <li>IT Support & Troubleshooting</li>
+              <li>Networking (TCP/IP, DNS, DHCP)</li>
+              <li>Cybersecurity Fundamentals</li>
+              <li>Linux / Windows</li>
+              <li>Microsoft 365 Support</li>
+            </ul>
+          </div>
 
+          <div class="info-block">
+            <h3>Education</h3>
+
+            <div class="item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>MSc Cybersecurity</strong>
+                <span>NYIT Vancouver</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>BSc CSE</strong>
+                <span>Leading University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
