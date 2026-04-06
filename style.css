@@ -57,10 +57,10 @@ a {
 }
 
 .hero-section {
-  min-height: calc(100vh - 56px);
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, #003a2f 0%, #005546 100%);
+  padding-bottom: 24px;
 }
 
 .bg-shapes {
