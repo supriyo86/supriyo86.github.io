@@ -11,6 +11,10 @@ body {
 }
 
 .navbar {
+  justify-content: center;
+  gap: 15px;
+}
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
