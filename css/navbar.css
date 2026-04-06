@@ -11,18 +11,15 @@ body {
 }
 
 .navbar {
-  justify-content: center;
-  gap: 15px;
-}
-.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   height: 72px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
